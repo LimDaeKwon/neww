@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".MainActivity">
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:paddingTop="20dp"
+        android:background="#fa7107"
+        android:weightSum="20"
+
+        >
+
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="18"
+            android:gravity="left"
+            android:text="대타"
+            android:textColor="#ffffff"
+            android:textSize="40sp" />
+
+        <ImageView
+            android:id="@+id/setting"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="50dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:src="@drawable/setting_icon"></ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="27dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:text="거리순▽"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:text="평점순▽"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:text="최신순▽"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:text="세부사항"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="500dp">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:orientation="horizontal"
+            android:rowCount="3">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    app:srcCompat="@drawable/profile_icon" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:background="#ffffff"
+                    android:gravity="left"
+                    android:text="성별 : 남
+                경력 : 편의점, 카페, 음식점
+                지역 : 동대문구, 노원구, 도봉구
+                시간 : 주말, 공휴일 15:00~23:00"
+                    android:textColor="#595754"
+                    android:textSize="14sp"
+                    tools:ignore="DuplicateIds" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    app:srcCompat="@drawable/profile_icon" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:background="#ffffff"
+                    android:gravity="left"
+                    android:text="성별 : 남
+                경력 : 편의점, 카페, 음식점
+                지역 : 동대문구, 노원구, 도봉구
+                시간 : 주말, 공휴일 15:00~23:00"
+                    android:textColor="#595754"
+                    android:textSize="14sp"
+                    tools:ignore="DuplicateIds" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    app:srcCompat="@drawable/profile_icon" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:background="#ffffff"
+                    android:gravity="left"
+                    android:text="성별 : 남
+                경력 : 편의점, 카페, 음식점
+                지역 : 동대문구, 노원구, 도봉구
+                시간 : 주말, 공휴일 15:00~23:00"
+                    android:textColor="#595754"
+                    android:textSize="14sp"
+                    tools:ignore="DuplicateIds" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="16dp"
+                        android:background="@null"
+                        android:gravity="center"
+                        app:srcCompat="@drawable/profile_icon" />
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:background="#ffffff"
+                        android:gravity="left"
+                        android:text="성별 : 남
+                    경력 : 편의점, 카페, 음식점
+                    지역 : 동대문구, 노원구, 도봉구
+                    시간 : 주말, 공휴일 15:00~23:00"
+                        android:textColor="#595754"
+                        android:textSize="14sp"
+                        tools:ignore="DuplicateIds" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    app:srcCompat="@drawable/profile_icon" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:background="#ffffff"
+                    android:gravity="left"
+                    android:text="성별 : 남
+                경력 : 편의점, 카페, 음식점
+                지역 : 동대문구, 노원구, 도봉구
+                시간 : 주말, 공휴일 15:00~23:00"
+                    android:textColor="#595754"
+                    android:textSize="14sp"
+                    tools:ignore="DuplicateIds" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    app:srcCompat="@drawable/profile_icon" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:background="#ffffff"
+                    android:gravity="left"
+                    android:text="성별 : 남
+                경력 : 편의점, 카페, 음식점
+                지역 : 동대문구, 노원구, 도봉구
+                시간 : 주말, 공휴일 15:00~23:00"
+                    android:textColor="#595754"
+                    android:textSize="14sp"
+                    tools:ignore="DuplicateIds" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    app:srcCompat="@drawable/profile_icon" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:background="#ffffff"
+                    android:gravity="left"
+                    android:text="성별 : 남
+                경력 : 편의점, 카페, 음식점
+                지역 : 동대문구, 노원구, 도봉구
+                시간 : 주말, 공휴일 15:00~23:00"
+                    android:textColor="#595754"
+                    android:textSize="14sp"
+                    tools:ignore="DuplicateIds" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    app:srcCompat="@drawable/profile_icon" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:background="#ffffff"
+                    android:gravity="left"
+                    android:text="성별 : 남
+                경력 : 편의점, 카페, 음식점
+                지역 : 동대문구, 노원구, 도봉구
+                시간 : 주말, 공휴일 15:00~23:00"
+                    android:textColor="#595754"
+                    android:textSize="14sp"
+                    tools:ignore="DuplicateIds" />
+            </LinearLayout>
+        </GridLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_row="0"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView_home"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="16dp"
+            android:background="@null"
+            android:clickable="true"
+            android:gravity="center"
+            app:srcCompat="@drawable/home_icon" />
+
+        <ImageView
+            android:id="@+id/imageView_search"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="16dp"
+            android:background="@null"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:gravity="center"
+            app:srcCompat="@drawable/search_icon" />
+
+        <ImageView
+            android:id="@+id/imageView_profile"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="16dp"
+            android:background="@null"
+            android:clickable="true"
+            android:gravity="center"
+            app:srcCompat="@drawable/person_icon" />
+
+        <ImageView
+            android:id="@+id/imageView_restart"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="16dp"
+            android:onClick="onClick"
+            android:background="@null"
+            android:clickable="true"
+            android:gravity="center"
+            app:srcCompat="@drawable/restart_icon" />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

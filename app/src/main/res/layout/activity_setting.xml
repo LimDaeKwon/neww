@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".setting"
+    android:weightSum="10"
+    android:orientation="vertical">
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:background="#fa7107"
+        android:weightSum="20"
+
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:background="@null"
+            android:src="@drawable/arrow"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:layout_weight="1"
+            >
+        </ImageView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="설정"
+            android:textStyle="bold"
+            android:textSize="35sp"
+            android:textColor="#ffffff"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="18"
+            >
+        </TextView>
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:background="@null"
+            android:src="@drawable/refresh"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:layout_weight="1"
+            >
+        </ImageView>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        android:textStyle="bold"
+        android:gravity="center|left"
+        android:paddingLeft="5dp"
+        android:textSize="35sp"
+        android:text="기타설정" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        android:gravity="center|left"
+        android:paddingLeft="5dp"
+        android:textStyle="bold"
+        android:textSize="35sp"
+        android:text="문의하기" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        android:gravity="center|left"
+        android:textStyle="bold"
+        android:paddingLeft="5dp"
+        android:textSize="35sp"
+        android:onClick="onClick"
+        android:text="공지사항" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        android:gravity="center|left"
+        android:textSize="35sp"
+        android:paddingLeft="5dp"
+        android:text="보기방식변경" />
+
+
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        android:paddingLeft="5dp"
+        android:gravity="center|left"
+        android:textSize="35sp"
+        android:onClick="onClick"
+        android:text="알림설정" />
+</LinearLayout>

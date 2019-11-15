@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="20"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:background="#fa7107"
+        android:weightSum="20"
+        android:layout_weight="1.7"
+
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:background="@null"
+            android:src="@drawable/backspace"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:layout_weight="1"
+            >
+        </ImageView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="알림설정    "
+            android:textStyle="bold"
+            android:textSize="35sp"
+            android:textColor="#ffffff"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="18"
+            >
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+
+        android:weightSum="20"
+        android:layout_weight="1"
+
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="17"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:text="중요알림"
+            android:textColor="#000000"
+            android:layout_gravity="center"
+            android:paddingLeft="8dp"
+            android:textSize="30sp"
+            android:textStyle="bold"></TextView>
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:background="@null"
+            android:src="@drawable/sound"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:layout_weight="1"
+            >
+        </ImageView>
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:background="@null"
+            android:src="@drawable/mute"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:layout_weight="1"
+            >
+        </ImageView>
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:background="@null"
+            android:src="@drawable/vibration"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:layout_weight="1"
+            >
+        </ImageView>
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+
+        android:weightSum="20"
+        android:layout_weight="1"
+
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="기타알림"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:textColor="#000000"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:layout_weight="17"
+            android:layout_gravity="center"
+            android:paddingLeft="8dp"
+            >
+        </TextView>
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:background="@null"
+            android:src="@drawable/sound"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:layout_weight="1"
+            >
+        </ImageView>
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:background="@null"
+            android:src="@drawable/mute"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:layout_weight="1"
+            >
+        </ImageView>
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:background="@null"
+            android:src="@drawable/vibration"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:layout_weight="1"
+            >
+        </ImageView>
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+
+        android:weightSum="20"
+        android:layout_weight="1"
+
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="푸시알림"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:layout_weight="17"
+            android:layout_gravity="center"
+            android:paddingLeft="8dp"
+            >
+        </TextView>
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:src="@drawable/switchoff"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:layout_weight="5"
+            >
+        </ImageView>
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+
+        android:weightSum="20"
+        android:layout_weight="1"
+
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SMS수신"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:layout_weight="17"
+            android:layout_gravity="center"
+            android:paddingLeft="8dp"
+            >
+        </TextView>
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:src="@drawable/switchoff"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:layout_weight="5"
+            >
+        </ImageView>
+    </LinearLayout>
+
+</LinearLayout>
